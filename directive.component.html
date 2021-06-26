@@ -1,0 +1,49 @@
+<h2>Structural directives</h2>
+<h3>ngIf</h3>
+<button (click)="tap()"> {{buttonName}} </button>
+<div *ngIf="boolean">
+    <ul>
+        <h4>Popular Languages</h4>
+        <li>C</li>
+        <li>C++</li>
+        <li>JAVA</li>
+        <li>PYTHON</li>
+    </ul>
+</div>
+<hr>
+<h3>ngFor</h3>
+ <ul>
+     <li *ngFor = "let i of fruits"> {{i.name}}, {{i.color}}</li>
+ </ul>
+ <hr>
+ <h3>ngSwitch</h3>
+ <div [ngSwitch] = "color">
+     <div *ngSwitchCase="'red'"> Selected color :Red </div>
+     <div *ngSwitchCase="'blue'"> Selected color : Blue</div>
+     <div *ngSwitchCase="'green'"> Selected color : Green</div>
+     <div *ngSwitchCase="'black'">Selected color: Black</div>
+     <div *ngSwitchDefault> Default color </div>
+ </div>
+ <hr>
+ <h2>Attribute Directives</h2>
+ <p>it is used to define the styles</p>
+ <p>it is divided into 3 types</p>
+ <ol>
+     <li>ngclass</li>
+     <li>ngstyle</li>
+     <li>ngmodel</li>
+ </ol>
+<h3>ngClass</h3>  
+<div [ngClass]=" 'welcome' ">
+    Hello everyone...!
+</div>
+<br>
+<button (click)=" ramya = !ramya"> Change </button><br><br>
+<div [ngClass]=" ramya? 'primary' : 'secondary' ">
+   Attribute Directive - ngClass (2)
+</div>
+<h3>ngstyle</h3>
+<div [ngStyle]="style">
+    Attribute Directive - ngStyle(3)
+</div>
+
