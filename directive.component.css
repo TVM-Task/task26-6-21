@@ -1,0 +1,21 @@
+.primary
+{
+    color: blue;
+}
+.secondary
+{
+    color:chartreuse;
+}
+.welcome
+{
+    color:tomato;
+}
+h2
+{
+    font-style: italic;
+    color:deeppink;
+}
+h3
+{
+    color:limegreen;
+}
