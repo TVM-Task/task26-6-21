@@ -1,0 +1,19 @@
+<h1>attributedirective works!</h1>
+<h1>ngClass</h1>
+//one way
+<div [ngClass]=" 'classstyle' ">
+    attribute directive-ngClass(1)
+</div>
+<br>
+<br>
+//another way
+<button (click)="flag=!flag">change</button><br><br>
+<div [ngClass]="flag ?'primary':'secondary'">
+    attribute directive-ngClass(2)
+</div>
+
+
+<h1>ngStyle</h1>
+<div [ngStyle]="style">
+    attribute directive-ngStyle
+</div>>
